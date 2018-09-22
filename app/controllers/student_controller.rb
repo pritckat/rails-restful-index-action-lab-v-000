@@ -1,8 +1,6 @@
 class StudentController < ApplicationController
 
-  get '/students' do
+  def index
     @students = Student.all
-
-    erb :index
   end
 end
